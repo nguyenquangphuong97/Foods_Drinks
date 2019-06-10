@@ -11,4 +11,11 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_self
+
+//= require Web/bootstrap.min.css
+//= require Web/font-awesome.min.css
+//= require Web/nouislider.min.css
+//= require Web/slick-theme.css
+//= require Web/slick.css
+//= require Web/style.css
  */
