@@ -1,4 +1,5 @@
 en:
+<<<<<<< HEAD
 
   main_title: "Food and Drink Sample App"
   static_pages:
@@ -29,3 +30,7 @@ en:
   menu: "Menu"
   view_cart : "View Cart"
   check_out : "Check out"
+=======
+  hello: "Hello world"
+  base_title: "FoodsDrinks"
+>>>>>>> add model and relationship
