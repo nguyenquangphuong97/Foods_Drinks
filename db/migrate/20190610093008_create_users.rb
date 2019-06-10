@@ -7,11 +7,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :phone
       t.string :password_digest
       t.string :remember_digest
-<<<<<<< HEAD
       t.boolean :admin
-=======
-
->>>>>>> add model and relationship
       t.timestamps
     end
   end

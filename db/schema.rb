@@ -12,13 +12,13 @@
 
 ActiveRecord::Schema.define(version: 2019_06_12_012803) do
 
-  create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci", force: :cascade do |t|
+  create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "order_items", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci", force: :cascade do |t|
+  create_table "order_items", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "order_id"
     t.bigint "product_id"
     t.integer "price"
@@ -29,21 +29,18 @@ ActiveRecord::Schema.define(version: 2019_06_12_012803) do
     t.index ["product_id"], name: "index_order_items_on_product_id"
   end
 
-  create_table "orders", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci", force: :cascade do |t|
+  create_table "orders", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "order_id"
     t.integer "user_id"
-<<<<<<< HEAD
     t.string "receiver_name"
     t.string "receiver_phone"
     t.string "receiver_address"
     t.integer "status"
-=======
->>>>>>> add model and relationship
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "products", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci", force: :cascade do |t|
+  create_table "products", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.string "image"
     t.integer "price"
@@ -53,7 +50,7 @@ ActiveRecord::Schema.define(version: 2019_06_12_012803) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "ratings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci", force: :cascade do |t|
+  create_table "ratings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "product_id"
     t.integer "rate"
@@ -63,17 +60,14 @@ ActiveRecord::Schema.define(version: 2019_06_12_012803) do
     t.index ["user_id"], name: "index_ratings_on_user_id"
   end
 
-  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci", force: :cascade do |t|
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
-<<<<<<< HEAD
-    t.boolean "admin"
-=======
->>>>>>> add model and relationship
     t.string "email"
     t.string "address"
     t.string "phone"
     t.string "password_digest"
     t.string "remember_digest"
+    t.boolean "admin"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

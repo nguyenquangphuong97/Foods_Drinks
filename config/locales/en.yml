@@ -1,6 +1,4 @@
 en:
-<<<<<<< HEAD
-
   main_title: "Food and Drink Sample App"
   static_pages:
     home:
@@ -8,6 +6,15 @@ en:
       para1_html: "This is the home page for the our Sample Food And Drink"
       welcome: "Food and Drink Sample App"
       para2: "sample application"
+  user:
+    new:
+      title: "Sign up"
+      button_text: "Submit"
+      submit: "Create"
+    session:
+      title: "Login"
+      remember_me: "Remember me"
+      submit: "Login"
   hello: "Hello world"
   base_title: "FoodsDrinks"
   introduction: "We made this application on our Framgia Intership at
@@ -30,7 +37,12 @@ en:
   menu: "Menu"
   view_cart : "View Cart"
   check_out : "Check out"
-=======
   hello: "Hello world"
   base_title: "FoodsDrinks"
->>>>>>> add model and relationship
+  new_user: "New user? "
+  require_user: "Require login first"
+  app_name: "Foodoo"
+  profile: "Profile"
+  settings: "Settings"
+  log_out: "Log out"
+  account_html: 'Account <b class="caret"></b>'
