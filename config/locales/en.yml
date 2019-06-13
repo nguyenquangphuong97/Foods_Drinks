@@ -1,3 +1,31 @@
 en:
+
+  main_title: "Food and Drink Sample App"
+  static_pages:
+    home:
+      title: "Home"
+      para1_html: "This is the home page for the our Sample Food And Drink"
+      welcome: "Food and Drink Sample App"
+      para2: "sample application"
   hello: "Hello world"
   base_title: "FoodsDrinks"
+  introduction: "We made this application on our Framgia Intership at
+                16 Ly Thuong Kiet"
+  phone_number: "0905388197"
+  contact_gmail: "phuoc&phuong@gmail.com"
+  contact_us : "Contact Us"
+  privacy_policy: "Privacy Policy"
+  address: "16 Ly Thuong Kiet"
+  product_name: "Product Name"
+  about_us: "ABOUT US"
+  category: "Category"
+  foods: "Foods"
+  drinks: "Drinks"
+  combo: "Combo"
+  infomation: "INFORMATION"
+  my_account: "MY ACCOUNT"
+  search: "Search"
+  cart: "Your Cart"
+  menu: "Menu"
+  view_cart : "View Cart"
+  check_out : "Check out"
