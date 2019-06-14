@@ -32,10 +32,13 @@ ActiveRecord::Schema.define(version: 2019_06_12_012803) do
   create_table "orders", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci", force: :cascade do |t|
     t.integer "order_id"
     t.integer "user_id"
+<<<<<<< HEAD
     t.string "receiver_name"
     t.string "receiver_phone"
     t.string "receiver_address"
     t.integer "status"
+=======
+>>>>>>> add model and relationship
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -62,7 +65,10 @@ ActiveRecord::Schema.define(version: 2019_06_12_012803) do
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci", force: :cascade do |t|
     t.string "name"
+<<<<<<< HEAD
     t.boolean "admin"
+=======
+>>>>>>> add model and relationship
     t.string "email"
     t.string "address"
     t.string "phone"

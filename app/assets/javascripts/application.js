@@ -13,6 +13,7 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+<<<<<<< HEAD
 
 //= require Web/bootstrap.min.js
 //= require Web/jquery.min.js
@@ -20,3 +21,5 @@
 //= require Web/main.js
 //= require Web/nouislider.min.js
 //= require Web/slick.min.js
+=======
+>>>>>>> add model and relationship
