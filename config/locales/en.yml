@@ -11,10 +11,17 @@ en:
       title: "Sign up"
       button_text: "Submit"
       submit: "Create"
+    edit:
+      title: "Edit your profile"
+      button_text: "Change"
     session:
       title: "Login"
       remember_me: "Remember me"
       submit: "Login"
+    admin:
+      users:
+        index:
+          title: "All users"
   hello: "Hello world"
   base_title: "FoodsDrinks"
   introduction: "We made this application on our Framgia Intership at
@@ -39,10 +46,18 @@ en:
   check_out : "Check out"
   hello: "Hello world"
   base_title: "FoodsDrinks"
+  invalid_email_password: "Invalid email/password"
+  delete: "Delete"
+  you_sure: "Are you sure?"
+  user_deleted: "User deleted successfully"
+  delete_failed: "Delete failed"
+  users_index: "Users"
   new_user: "New user? "
-  require_user: "Require login first"
+  require_login: "Require login first"
   app_name: "Foodoo"
   profile: "Profile"
   settings: "Settings"
   log_out: "Log out"
   account_html: 'Account <b class="caret"></b>'
+
+

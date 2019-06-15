@@ -1,10 +1,6 @@
 source "https://rubygems.org"
 git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
-
-
-gem "coffee-rails", "~> 4.2"
-gem "jbuilder", "~> 2.5"
 gem "bcrypt", "~> 3.1.7"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap-sass"
@@ -12,6 +8,7 @@ gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "faker"
 gem "figaro"
+gem "font-awesome-rails"
 gem "jbuilder", "~> 2.5"
 gem "jquery-rails"
 gem "mysql2", ">= 0.4.4", "< 0.6.0"
