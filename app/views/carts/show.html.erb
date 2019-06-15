@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-10 col-md-offset-1">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th><%= t ".product" %></th>
+            <th><%= t ".quantity" %></th>
+            <th class="text-center"><%= t ".price" %></th>
+            <th class="text-center"><%= t ".total" %></th>
+            <th> </th>
+          </tr>
+        </thead>
+        <tbody>
+          <%= render(partial: "cart_item", collection: @products, as: :product) unless @cart.empty? %>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><h5><%= t ".subtotal" %></h5></td>
+            <td class="text-right"><h5><strong><%= number_to_currency(@cart_total) %></strong></h5></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><h5><%= t "order.show.fee" %></h5></td>
+            <td class="text-right"><h5><strong><%= number_to_currency(@cart_total * Settings.fee) %></strong></h5></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><h3><%= t ".total" %></h3></td>
+            <td class="text-right"><h3><strong><%= number_to_currency(@cart_total + @cart_total * Settings.fee) %></strong></h3></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <%= link_to(products_path, type: "button", class: "btn btn-default") do %>
+                <span class="glyphicon glyphicon-shopping-cart"></span><%= t ".continue" %>
+              <% end %>
+            </td>
+            <td>
+              <%= link_to(new_order_path, type: "button", class: "btn btn-default") do %>
+                <%= t ".checkout" %><span class="glyphicon glyphicon-play"></span>
+              <% end %>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

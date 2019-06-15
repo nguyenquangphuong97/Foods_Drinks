@@ -4,6 +4,8 @@ class ApplicationController < ActionController::Base
 
   private
 
+  before_action :set_cart
+
   def require_log_in
     return if logged_in?
     store_location
@@ -21,9 +23,18 @@ class ApplicationController < ActionController::Base
     redirect_to root_url
   end
 
+
   def load_product
     return if @product = Product.find_by(id: params[:id])
     flash[:danger] = t "controller.product_not_found"
     redirect_to root_url
   end
+
+  def set_cart
+    session[:cart] ||= {}
+    session[:cart_total] ||= 0
+    @cart = session[:cart]
+    @cart_total = session[:cart_total]
+  end
+
 end

@@ -34,7 +34,9 @@ class User < ApplicationRecord
   def forget
     update_attributes remember_digest: nil
   end
-
+  def rated? product
+    products.include? product
+  end
   class << self
     def digest string
       cost = if ActiveModel::SecurePassword.min_cost

@@ -8,3 +8,7 @@ avatar_size: 150
 index_per_page: 20
 avatar_small: 50
 max_upload_size: 5
+min_quantity: 1
+rates: !ruby/range 1..5
+fee: 0.05
+

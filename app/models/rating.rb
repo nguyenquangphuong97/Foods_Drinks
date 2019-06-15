@@ -4,4 +4,5 @@ class Rating < ApplicationRecord
 
   validates :user_id, presence: true
   validates :product_id, presence: true
+  validates :rate, inclusion: {in: Settings.rates}
 end

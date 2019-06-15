@@ -6,7 +6,7 @@ class CreateOrders < ActiveRecord::Migration[5.2]
       t.string :receiver_name
       t.string :receiver_phone
       t.string :receiver_address
-      t.integer :status
+      t.integer :status, default: 0
       t.timestamps
     end
   end

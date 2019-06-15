@@ -44,8 +44,23 @@ module SessionsHelper
   def store_location
     session[:forwarding_url] = request.original_url if request.get?
   end
-
   def current_user? user
     current_user == user
+  end
+
+  def current_rating
+    if current_user.rated? @product
+      current_user.ratings.find_by product_id: @product.id
+    else
+      current_user.ratings.build
+    end
+  end
+
+  def toggled_rating? rate_points
+    rate_points <= current_rating.rate.to_i ? "btn-warning" : "btn-default"
+  end
+
+  def logged_admin?
+    logged_in? && current_user.admin?
   end
 end
