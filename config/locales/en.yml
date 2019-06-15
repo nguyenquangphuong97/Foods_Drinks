@@ -22,6 +22,24 @@ en:
       users:
         index:
           title: "All users"
+  admin:
+    product:
+      title: "PRODUCTS"
+      name: "NAME"
+      price: "PRICE"
+      category: CATEGORY
+      image: "main_image"
+      button_text: "Create"
+      edit: "Edit Product"
+    productedit:
+      button_text: "Edit"
+  update_success: "Update Success"
+  update_failed: "Update Failed"
+  products_index: "Product"
+  product_del: "Delete"
+  delete_failed: "Delete Fail"
+  create_failed: "Create failed"
+  product_created: "Create Success"
   hello: "Hello world"
   base_title: "FoodsDrinks"
   introduction: "We made this application on our Framgia Intership at
@@ -59,5 +77,3 @@ en:
   settings: "Settings"
   log_out: "Log out"
   account_html: 'Account <b class="caret"></b>'
-
-

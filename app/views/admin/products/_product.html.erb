@@ -1,0 +1,7 @@
+<li>
+  <%= link_to product.name, admin_product_path(product) %>
+  <%= image_tag(product.image.url, alt: "Image", class: "img_product") if product.image? %>
+  <% if current_user.admin? %> |
+    <%= link_to t("delete"), admin_product_path(product), method: :delete, data: {confirm: t("you_sure")} %>
+  <% end %>
+</li>

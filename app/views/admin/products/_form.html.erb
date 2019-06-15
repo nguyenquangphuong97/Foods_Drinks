@@ -1,0 +1,36 @@
+<%= form_for [:admin, @product] do |f| %>
+  <fieldset>
+
+    <!-- Form Name -->
+    <legend><%= t "admin.product.title" %></legend>
+
+    <!-- Text input-->
+    <div class="form-group">
+        <%= f.label :name, t("admin.product.name") %>
+        <%= f.text_field :name, class: "form-control input-md"%>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+        <%= f.label :price, t("admin.product.price") %>
+        <%= f.text_field :price, class: "form-control input-md"%>
+    </div>
+
+    <!-- Select Basic -->
+    <div class="form-group">
+        <%= f.label :category, t("admin.product.category") %>
+        <%= f.collection_select :category_id, @categories, :id, :name, {prompt: true}, {class: "form-control"} %>
+    </div>
+    
+    <!-- File Button --> 
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="filebutton"><%= t "admin.product.image" %></label>
+        <%= f.file_field :image, accept: "image/jpeg,image/gif,image/png" %>
+    </div>
+
+    <!-- Button -->
+    <div class="form-group">
+        <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+    </div>
+  </fieldset>
+<% end %>

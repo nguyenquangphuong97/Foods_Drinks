@@ -7,3 +7,4 @@ checked: "1"
 avatar_size: 150
 index_per_page: 20
 avatar_small: 50
+max_upload_size: 5
