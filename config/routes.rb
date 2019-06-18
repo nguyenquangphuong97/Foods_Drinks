@@ -7,10 +7,14 @@ Rails.application.routes.draw do
   get "/login", to: "sessions#new"
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
+  get "products/index"
+  get "products/show"
 
   resources :users, except: %i(index destroy)
-
+  resources :products, only: %i(index show)
+  
   namespace :admin do
     resources :users, only: %i(index destroy)
+    resources :products
   end
 end
